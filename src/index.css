@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gilroy{
+  font-family: 'gilroy-regular';
+}
+.space{
+  font-family: 'Space Grotesk';
+}
+.color-blue{
+  color: #055BEF;
+}
