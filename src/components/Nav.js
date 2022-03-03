@@ -17,7 +17,7 @@ const Nav = () => {
   };
 
   return (
-    <div className="flex justify-between mt-7 mx-4 items-center tracking-tighter space ">
+    <div className="flex justify-between mt-7 mx-4 items-center tracking-tighter space z-10">
       <div className="space font-bold text-3xl">
         Crypto<span className="color-blue">.xyz</span>
       </div>

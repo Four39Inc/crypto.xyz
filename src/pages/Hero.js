@@ -10,7 +10,7 @@ const Hero = () =>{
 
     return(
         <div>
-            <div className="h-screen overflow-hidden">
+            <div className="h-screen overflow-hidden px-4">
             <Nav />
             <Header />
             </div>
