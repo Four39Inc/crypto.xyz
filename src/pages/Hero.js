@@ -9,7 +9,12 @@ const Hero = () =>{
 
 
     return(
-        <Nav />
+        <div>
+            <div className="h-screen overflow-hidden">
+            <Nav />
+            <Header />
+            </div>
+        </div>
     )
 
 

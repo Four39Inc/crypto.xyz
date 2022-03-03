@@ -72,8 +72,8 @@ const Nav = () => {
         ></input>
       </div>
 
-      <div className="mobileView flex md:hidden">
-        <button onClick={menuToggler}>
+      <div className="mobileView flex md:hidden transition-all delay-500 ease-in-out duration-1000">
+        <button onClick={menuToggler} className="h-full w-full">
           <svg
             width="36"
             height="15"
@@ -84,25 +84,25 @@ const Nav = () => {
             <path
               d="M2 2H34"
               stroke="black"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
             <path
               d="M2 13H34"
               stroke="black"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
         </button>
 
         <div
-          className={`absolute z-10 transition-all delay-75 ease-in-out bg-black min-h-screen w-full top-0 left-0 text-white flex items-center justify-center text-5xl md:text-6xl ${
+          className={`fixed z-10 transition-all delay-75 duration-800 ease-linear bg-black min-h-screen w-full top-0 left-0 text-white flex items-center justify-center text-5xl md:text-6xl ${
             menu
               ? "translate-x-0 opacity-100 "
-              : "translate-x-95 opacity-50 hidden"
+              : "-translate-x-full opacity-0 "
           }`}
         >
           <svg
@@ -124,7 +124,7 @@ const Nav = () => {
           </svg>
           <div className="flex flex-col space-y-2 md:space-y-4 w-full">
             <p className="w-full hover:bg-gray-900 py-7 md:py-10">Market</p>
-            <button className="w-full hover:bg-gray-900 py-7 md:py-10 flex items-center justify-center space-x-2">
+            <button className="w-full hover:bg-orange-600 py-7 md:py-10 flex items-center justify-center space-x-2">
               <p>Community</p>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
